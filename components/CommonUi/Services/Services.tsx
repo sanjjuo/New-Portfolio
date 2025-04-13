@@ -12,7 +12,7 @@ const Services = () => {
             hover:bg-appColor-primary rounded-none cursor-pointer'
                     >
                         <div className='space-y-3 flex flex-col items-center justify-center'>
-                            <span className='w-32 h-32'>{service.icon}</span>
+                            <span>{service.icon}</span>
                             <h3 className='text-xl font-medium app-text'>{service.title}</h3>
                         </div>
                     </div>
