@@ -8,7 +8,7 @@ const Services = () => {
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className='p-6 h-60 text-center bg-appColor-secondary/10 
+                        className='p-6 h-60 text-center bg-appColor-secondary/10 transition transform duration-700
             hover:bg-appColor-primary rounded-none cursor-pointer'
                     >
                         <div className='space-y-3 flex flex-col items-center justify-center'>

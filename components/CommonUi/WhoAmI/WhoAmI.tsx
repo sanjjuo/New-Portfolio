@@ -21,7 +21,7 @@ const WhoAmI = ({ image }: { image: string }) => {
         </div>
         <div className="lg:col-span-2 space-y-3 flex flex-col items-center justify-center">
           <p className="app-text text-4xl text-center lg:text-start lg:text-7xl">
-            Frontend Developer, Web Designer, Web Developer, and the Footballer.
+          Frontend Developer, Web Designer, and the Web Developer.
           </p>
           <p>
             Frontend Developer with 1.2 year of experience in React.js

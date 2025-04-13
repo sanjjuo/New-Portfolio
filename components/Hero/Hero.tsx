@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
@@ -19,14 +20,21 @@ const Hero = () => {
         {/* second col */}
         <div className="hidden lg:block bg-black h-[100vh] w-full"></div>
         {/* large text */}
-        <h1
-          className="absolute inset-0 app-text text-[70px] lg:text-[180px] xl:text-[260px] tracking-widest uppercase text-transparent stroke-white stroke-[4.5px] flex items-center justify-center pointer-events-none"
-          style={{
-            WebkitTextStroke: "3px white",
-          }}
-        >
-          sanjeed
-        </h1>
+        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 lg:inset-0 flex flex-col items-center justify-center">
+          <h1
+            className="app-text text-[70px] lg:text-[180px] xl:text-[260px] tracking-widest uppercase text-transparent stroke-white stroke-[4.5px] pointer-events-none"
+            style={{
+              WebkitTextStroke: "3px white",
+            }}
+          >
+            sanjeed
+          </h1>
+          <Link href='contact-me'>
+            <Button className="bg-appColor-primary font-normal capitalize h-12 w-40 hover:duration-1000">
+              <p className="animate-pulse">contact me</p>
+            </Button>
+          </Link>
+        </div>
         <div className="hidden lg:block">
           <Link
             href="#who-am-i"

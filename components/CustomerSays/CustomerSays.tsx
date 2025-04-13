@@ -26,17 +26,17 @@ const CustomerSays = () => {
             {testimonials.map((client, index) => (
               <SwiperSlide key={index} className="p-5 lg:p-10 rounded-3xl bg-white">
                 <div className="flex flex-col items-center justify-center">
-                  <p className="text-lg lg:text-2xl font-normal text-center text-appColor-secondary app-text">{client.comment}</p>
+                  <p className="text-base lg:text-2xl font-normal text-center text-appColor-secondary app-text">{client.comment}</p>
                   <div className="mt-5 lg:mt-10 flex flex-col items-center justify-center">
                     <Image
                       src={client.image}
                       alt="client-image"
                       width={100}
                       height={100}
-                      className="rounded-full object-cover mb-5 border-2"
+                      className="rounded-full object-cover mb-5 border-4 border-appColor-primary"
                     />
                     <h5 className="font-semibold capitalize text-base lg:text-xl text-appColor-secondary app-text">{client.name}</h5>
-                    <p className= "text-appColor-secondary text-sm lg:text-base app-text">{client.title}</p>
+                    <p className= "text-appColor-secondary text-xs lg:text-base app-text">{client.title}</p>
                   </div>
                 </div>
               </SwiperSlide>
