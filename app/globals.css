@@ -11,9 +11,6 @@ body{
     max-width: 1200px; */
 }
 
-
-
-
 @layer base {
   :root {
         --background: 0 0% 100%;
