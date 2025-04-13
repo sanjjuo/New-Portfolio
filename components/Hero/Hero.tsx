@@ -12,7 +12,7 @@ const Hero = () => {
             width={200}
             height={100}
             alt="my-image"
-            className="w-full h-[110vh] lg:h-[100vh] object-cover"
+            className="w-full h-[80vh] lg:h-[100vh] object-cover"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50"></div>
         </div>
@@ -27,7 +27,7 @@ const Hero = () => {
         >
           sanjeed
         </h1>
-        <div>
+        <div className="hidden lg:block">
           <Link
             href="#who-am-i"
             scroll
