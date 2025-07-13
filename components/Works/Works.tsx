@@ -3,8 +3,8 @@ import { projects } from "./data";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
-import GithubIcon from "../CommonUi/SocialMediaIcons/svg/GithubIcon";
 import { Link } from "lucide-react";
+import GithubIcon from "../common/SocialMediaIcons/svg/GithubIcon";
 
 const Works = () => {
   return (

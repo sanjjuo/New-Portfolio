@@ -1,6 +1,6 @@
 import React from "react";
-import WhoAmI from "@/components/CommonUi/WhoAmI/WhoAmI";
 import CustomerSays from "@/components/CustomerSays/CustomerSays";
+import WhoAmI from "@/components/common/WhoAmI/WhoAmI";
 
 const page = () => {
   return (
