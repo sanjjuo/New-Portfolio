@@ -2,7 +2,7 @@ import React from "react";
 import CustomerSays from "@/components/CustomerSays/CustomerSays";
 import WhoAmI from "@/components/common/WhoAmI/WhoAmI";
 
-const page = () => {
+const AboutPage = () => {
   return (
     <>
       <div>
@@ -15,4 +15,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutPage;

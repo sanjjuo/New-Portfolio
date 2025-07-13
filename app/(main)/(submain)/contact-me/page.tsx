@@ -24,7 +24,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormData } from "@/Types/type";
 import { Textarea } from "@/components/ui/textarea";
 
-const page = () => {
+const ContactPage = () => {
   const contactSchema = z.object({
     name: z.string().nonempty({ message: "Name is required" }),
     email: z.email({ message: "Please enter a valid email address" }),
@@ -54,8 +54,8 @@ const page = () => {
         <CardHeader>
           <CardTitle className="text-center text-3xl">Get in touch</CardTitle>
           <CardDescription className="text-center mt-2 text-gray-600">
-            Let's connect! I'm available for freelance work, collaborations, or
-            tech talks.
+            Let&apos;s connect! I&apos;m available for freelance work,
+            collaborations, or tech talks.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -146,4 +146,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;

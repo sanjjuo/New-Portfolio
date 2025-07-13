@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const SubLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
   const pageName =
     pathname.split("/").filter(Boolean).pop()?.split("-").join(" ") || "/";
@@ -36,4 +36,4 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default Layout;
+export default SubLayout;
