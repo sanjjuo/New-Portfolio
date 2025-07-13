@@ -3,7 +3,7 @@ import SocialMediaIcons from "../common/SocialMediaIcons/SocialMediaIcons";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full bg-black flex flex-col items-center justify-center space-y-10">
+    <div className="h-[90vh] pb-10 lg:p-0 lg:h-screen w-full bg-black flex flex-col items-center justify-end lg:justify-center space-y-10">
       <div className="text-center border-b-4 border-blue-300 py-5">
         <h1 className="app-text-gradient text-[var(--font-poppins)] text-7xl lg:text-9xl tracking-widest uppercase pointer-events-none font-extrabold">
           sanjeed
@@ -15,7 +15,7 @@ const Hero = () => {
           Delivering powerful frontend systems driven by a passion for solving
           real-world challenges.
         </p>
-        <SocialMediaIcons/>
+        <SocialMediaIcons />
       </div>
       <div className="hidden lg:block">
         <Link
