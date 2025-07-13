@@ -2,8 +2,8 @@ import React from "react";
 import SideBar from "./SideBar";
 import Link from "next/link";
 import { navLinks } from "@/Data/data";
+import { Button } from "@/components/ui/button";
 const Navbar = () => {
- 
   return (
     <>
       <nav className="relative bg-transparent z-50">
@@ -34,6 +34,11 @@ const Navbar = () => {
               <SideBar />
             </div>
           </div>
+          <Link href="contact-me" className="hidden lg:block">
+            <Button className="app-gradient-bg font-normal text-black capitalize h-10 w-28 hover:duration-1000">
+              <p className="animate-pulse">contact me</p>
+            </Button>
+          </Link>
         </div>
       </nav>
     </>

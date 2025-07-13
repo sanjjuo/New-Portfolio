@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -33,8 +34,7 @@ const SideBar = () => {
         <SheetHeader>
           <SheetTitle hidden />
         </SheetHeader>
-
-        <div className="flex items-center justify-center h-[100vh]">
+        <div className="flex flex-1 items-center justify-center h-[100vh]">
           <ul className="space-y-10">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -54,6 +54,14 @@ const SideBar = () => {
             ))}
           </ul>
         </div>
+        <Link
+          href="contact-me"
+          className="sticky bottom-10 flex items-center justify-center"
+        >
+          <Button className="app-gradient-bg font-normal text-black capitalize h-10 w-28 hover:duration-1000">
+            <p className="animate-pulse">contact me</p>
+          </Button>
+        </Link>
       </SheetContent>
     </Sheet>
   );

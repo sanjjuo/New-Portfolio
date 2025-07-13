@@ -1,15 +1,13 @@
+import WhoAmI from '@/components/common/WhoAmI/WhoAmI'
 import Hero from '@/components/Hero/Hero'
-import Services from '@/components/CommonUi/Services/Services'
 import Skills from '@/components/Skills/Skills'
-import WhoAmI from '@/components/CommonUi/WhoAmI/WhoAmI'
 
 const Home = () => {
   return (
     <div className='overflow-hidden'>
       <Hero />
       <div className='app-width'>
-        <WhoAmI image='homeImage'/>
-        <Services/>
+        <WhoAmI readmore='home'/>
       </div>
       <Skills/>
     </div>

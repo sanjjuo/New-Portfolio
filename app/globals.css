@@ -86,9 +86,20 @@ body{
     @apply bg-appColor-primary uppercase tracking-widest text-black text-xs font-semibold rounded-3xl w-44 h-12 transition transform 
     duration-300 ease-out hover:scale-105 hover:!bg-appColor-primary/90
 }
-.app-text{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.app-text-gradient {
+  background: linear-gradient(90deg, #EEAECA 0%, #94BBE9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.app-gradient-bg {
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+
+/* .app-text{
+  @apply text-[var(--font-poppins)] text-white
+} */
 .swiper {
   @apply max-w-[280px] lg:max-w-[600px] h-auto
 }

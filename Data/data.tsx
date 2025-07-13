@@ -1,14 +1,5 @@
-import FrontendIcon from "@/SVG/FrontendIcon";
-import WebDesignIcon from "@/SVG/WebDesignIcon";
-import WebDeveloperIcon from "@/SVG/WebDeveloperIcon";
-import {
-  FooterSection,
-  NavLink,
-  Service,
-  Skill,
-  Testimonial,
-} from "@/Types/type";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { FooterSection, NavLink, Skill, Testimonial } from "@/Types/type";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export const navLinks: NavLink[] = [
   {
@@ -22,21 +13,6 @@ export const navLinks: NavLink[] = [
   {
     title: "contact",
     href: "/contact-me",
-  },
-];
-
-export const services: Service[] = [
-  {
-    icon: <FrontendIcon className="w-32 h-32" />,
-    title: "Frontend Development",
-  },
-  {
-    icon: <WebDesignIcon className="w-32 h-32" />,
-    title: "Web Design",
-  },
-  {
-    icon: <WebDeveloperIcon className="w-32 h-32" />,
-    title: "Web Development",
   },
 ];
 

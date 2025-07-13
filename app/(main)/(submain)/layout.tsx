@@ -1,5 +1,5 @@
 "use client";
-import BreadCrumbPath from "@/components/CommonUi/BreadCrumbPath/BreadCrumbPath";
+import BreadCrumbPath from "@/components/common/BreadCrumbPath/BreadCrumbPath";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React from "react";

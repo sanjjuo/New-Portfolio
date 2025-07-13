@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, M_PLUS_Code_Latin } from "next/font/google";
 import "../globals.css";
-import Navbar from "@/components/CommonUi/Navbar/Navbar";
-import Footer from "@/components/CommonUi/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
+
+const mPlusCodeLatin = M_PLUS_Code_Latin({
+  variable: "--font-m-plus-code-latin",
+  subsets: ["latin"],
+  weight: ['100', '200', '300', '400', '500', '600', '700', ]
 });
 
 export const metadata: Metadata = {
@@ -22,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} `}>
+      <body className={`${poppins.variable} ${mPlusCodeLatin.className}`}>
         <Navbar />
         {children}
         <Footer/>
