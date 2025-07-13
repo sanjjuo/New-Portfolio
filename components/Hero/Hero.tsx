@@ -3,15 +3,15 @@ import SocialMediaIcons from "../common/SocialMediaIcons/SocialMediaIcons";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full bg-black lg:flex flex-col items-center justify-center space-y-10">
+    <div className="h-screen w-full bg-black flex flex-col items-center justify-center space-y-10">
       <div className="text-center border-b-4 border-blue-300 py-5">
-        <h1 className="app-text-gradient text-[var(--font-poppins)] text-9xl tracking-widest uppercase pointer-events-none font-extrabold">
+        <h1 className="app-text-gradient text-[var(--font-poppins)] text-7xl lg:text-9xl tracking-widest uppercase pointer-events-none font-extrabold">
           sanjeed
         </h1>
-        <p className="text-white text-4xl">Frontend Developer</p>
+        <p className="text-white text-2xl lg:text-4xl">Frontend Developer</p>
       </div>
       <div className="space-y-5">
-        <p className="text-white text-xl max-w-[650px] text-center">
+        <p className="text-white text-sm lg:text-xl max-w-[400px] lg:max-w-[650px] text-center">
           Delivering powerful frontend systems driven by a passion for solving
           real-world challenges.
         </p>

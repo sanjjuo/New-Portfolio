@@ -9,21 +9,21 @@ const Skills = () => {
         <h1 className="uppercase text-appColor-secondary text-3xl text-center font-bold">
           Skills & Technologies
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 max-w-[1200px] mx-auto mt-10">
+        <div className="grid grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-5 max-w-[1200px] mx-auto mt-10">
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className="w-full p-5 flex flex-col items-center justify-center
-                        transition transform duration-700 ease-in-out hover:bg-appColor-primary rounded-full cursor-pointer space-y-2 group"
+              className="w-full p-2 lg:p-5 flex flex-col items-center justify-center
+                        transition transform duration-700 ease-in-out cursor-pointer space-y-2 group"
             >
               <Image
                 src={skill.image}
                 width={100}
                 height={100}
                 alt="skills-icons"
-                className="transition transfor duration-300 ease-in-out group-hover:-rotate-12"
+                className="transition h-14 w-14 md:h-24 md:w-24 transfor duration-300 ease-in-out group-hover:-rotate-12"
               />
-              <h5 className="font-semibold tracking-wide capitalize">
+              <h5 className="font-semibold text-xs md:text-base tracking-wide capitalize">
                 {skill.title}
               </h5>
             </div>
