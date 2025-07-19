@@ -3,6 +3,7 @@ import { Poppins, M_PLUS_Code_Latin } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -30,8 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} ${mPlusCodeLatin.className}`}>
         <Navbar />
+        <Toaster />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

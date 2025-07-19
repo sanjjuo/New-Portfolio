@@ -20,9 +20,9 @@ const WhoAmI = ({ readmore }: { readmore: string }) => {
           {readmore === "home" ? (
             <Link
               href="/about-me"
-              className=" hover:underline hover:underline-offset-2"
+              className="text-appColor-primary underline underline-offset-2"
             >
-              Read More
+              Know More
             </Link>
           ) : (
             <div className="flex items-center gap-2">

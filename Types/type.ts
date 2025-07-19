@@ -17,6 +17,7 @@ export interface Skill {
   id: number;
   title: string;
   image: string;
+  icon?: ReactNode;
 }
 
 // testimonial

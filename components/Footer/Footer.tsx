@@ -23,7 +23,7 @@ const Footer = () => {
           </h2>
           <ul className="space-y-3">
             {footerContents[1].linkContent?.map((link, index) => (
-              <li key={index}>
+              <li key={index} className="capitalize">
                 <Link
                   href={link.href}
                   className="text-gray-400 hover:text-appColor-primary cursor-pointer text-sm lg:text-base"
@@ -43,13 +43,17 @@ const Footer = () => {
           <div className="space-y-5">
             {footerContents[2].contactContent?.map((item, index) => (
               <div key={index} className="flex items-center gap-5 md:gap-2">
-                <span>{item.icon}</span>
-                <a
+                <span className="w-5 h-5">{item.icon}</span>
+                <Link
                   href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : "_self"}
+                  rel={
+                    item.href.startsWith("http") ? "noopener noreferrer" : ""
+                  }
                   className="text-gray-400 hover:text-appColor-primary text-sm lg:text-base"
                 >
                   {item.description}
-                </a>
+                </Link>
               </div>
             ))}
           </div>

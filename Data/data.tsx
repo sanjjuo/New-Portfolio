@@ -1,3 +1,5 @@
+import FramerMotionIcon from "@/components/Skills/svg/FramerIcon";
+import GsapIcon from "@/components/Skills/svg/GsapIcon";
 import { FooterSection, NavLink, Skill, Testimonial } from "@/Types/type";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -77,6 +79,28 @@ export const skills: Skill[] = [
     title: "express.js",
     image: "/express.png",
   },
+  {
+    id: 13,
+    title: "gsap",
+    image: "",
+    icon: <GsapIcon />,
+  },
+  {
+    id: 14,
+    title: "framer motion",
+    image: "",
+    icon: <FramerMotionIcon />,
+  },
+  {
+    id: 15,
+    title: "zustand",
+    image: "/zustand.svg",
+  },
+  {
+    id: 16,
+    title: "React Query",
+    image: "/react-query.svg",
+  },
 ];
 
 export const testimonials: Testimonial[] = [
@@ -149,7 +173,8 @@ export const footerContents: FooterSection[] = [
   {
     section: "About Me",
     aboutContent: {
-      description: "Frontend Developer, Web Designer, and Web Developer.",
+      description:
+        "Delivering powerful frontend systems driven by a passion for solving real-world challenges. Frontend Developer, Web Designer, and Web Developer.",
     },
     linkContent: [],
     contactContent: [],
@@ -160,7 +185,7 @@ export const footerContents: FooterSection[] = [
       description: "",
     },
     linkContent: [
-      { title: "Home", href: "/" },
+      { title: "home", href: "/" },
       { title: "about", href: "/about-me" },
       { title: "work", href: "/my-works" },
       { title: "contact", href: "/contact-me" },
@@ -175,19 +200,19 @@ export const footerContents: FooterSection[] = [
     linkContent: [],
     contactContent: [
       {
-        icon: <MapPin className="text-gray-400" />,
-        description: "kerala, india",
-        href: "#",
+        icon: <MapPin className="text-gray-400 w-5 h-5" />,
+        description: "Dubai, UAE",
+        href: "https://maps.app.goo.gl/akg1vimxBKatYx9n7",
       },
       {
-        icon: <Phone className="text-gray-400" />,
-        description: "+971 50 880 2162",
-        href: "#",
+        icon: <Phone className="text-gray-400 w-5 h-5" />,
+        description: "+971 54 477 2940",
+        href: "tel:+971544772940",
       },
       {
-        icon: <Mail className="text-gray-400" />,
+        icon: <Mail className="text-gray-400 w-5 h-5" />,
         description: "sanjeedofficial22@gmail.com",
-        href: "#",
+        href: "mailto:sanjeedofficial22@gmail.com",
       },
     ],
   },
