@@ -1,7 +1,6 @@
 import GithubIcon from "../svg/GithubIcon";
 import InstagramIcon from "../svg/InstagramIcon";
 import LinkedinIcon from "../svg/LinekdinIcon";
-import TwitterIcon from "../svg/TwitterIcon";
 
 export const socialMediaIcons = [
   {
